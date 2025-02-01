@@ -1,0 +1,107 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header and Navigation */
+header {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #1e4d80;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 0;
+    background-color: black;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff6347;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: left is wider than right */
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.card {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    max-width: 700px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #1e4d80;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Images */
+.card img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #1e4d80;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}

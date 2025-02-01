@@ -1,0 +1,132 @@
+:root {
+    --header-color: #d21034;
+    --background-color: #3c0a64;
+
+    --main: #3c0a64;
+    --sub: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+}
+
+h1,
+footer {
+    text-align: center;
+    background-color: var(--main);
+    color: var(--sub);
+
+    padding: 30px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+main .mainImage img {
+    background-color: var(--main);
+}
+
+main {
+    position: relative;
+}
+
+.data {
+    position: absolute;
+    top: 5em;
+    left: 2em;
+
+    background-color: white;
+    padding: 10px;
+}
+
+.weather {
+    position: absolute;
+    bottom: 5em;
+    right: 2em;
+
+    background-color: white;
+    padding: 10px;
+}
+/* .weatherIcon::after {
+    content: url(/images/sun.svg);
+    font-size: 10px;
+    border: 1px solid black;
+} */
+
+.mainImage img {
+    width: 100%;
+}
+
+.weatherIcon {
+    display: flex;
+    align-items: center;
+    background-color: var(--main);
+    color: var(--sub);
+    padding: 20px;
+
+    position: relative;
+    left: -20px;
+}
+
+.weatherIcon img {
+    width: 50px;
+}
+
+.data h2 {
+    background-color: var(--main);
+    color: var(--sub);
+    text-align: left;
+    padding: 10px;
+
+    position: relative;
+    left: -20px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .mainImage {
+        position: inherit;
+    }
+
+    .data,
+    .weather {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+
+        position: initial;
+    }
+
+    .data h2 {
+        text-align: center;
+        background-color: white;
+
+        position: initial;
+        color: black;
+    }
+
+    .weather {
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .weatherIcon {
+        display: block;
+        background-color: white;
+        color: black;
+        position: initial;
+    }
+
+    .weatherIcon img {
+        width: 80px;
+    }
+}
