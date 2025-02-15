@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: auto;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+}
+
+h1,
+footer {
+    background-color: #2d032b;
+    color: white;
+    text-align: center;
+}
+h1 {
+    padding: 1em;
+}
+footer {
+    font-size: medium;
+    padding: 1em;
+}
+.form p{
+    text-align: center;
+    padding: .4em;
+}
+form {
+    padding: 1em;
+    /* margin: 1em 0; */
+    background-color: #d5cdd5;
+}
+label {
+    display: block;
+    margin: .3em;
+}
+label input {
+    display: block;
+}
+.radio {
+    display: inline;
+}
+.radio input {
+    display: inline;
+}
+input[type="checkbox"] {
+    display: inline;
+}
+fieldset{
+    border: none;
+}
+textarea{
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 20vh;
+    min-height: 15vh;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    width: 98%;
+    font-size: 1em;
+    padding: .4em;
+}
+
+input[type="submit"]{
+    padding: 1em;
+    margin: .5em auto;
+    background-color: white;
+    cursor: pointer;
+}
